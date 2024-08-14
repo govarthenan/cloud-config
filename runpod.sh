@@ -1,4 +1,4 @@
-# start script --> bash -c 'curl -sL https://raw.githubusercontent.com/govarthenan/cloud-config/main/runpod.sh > /post_start.sh && /start.sh'
+# start script --> bash -c 'wget --no-cache http://raw.githubusercontent.com/govarthenan/cloud-config/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh && /start.sh'
 
 # download and install 
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
