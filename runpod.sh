@@ -1,4 +1,4 @@
-# start script --> bash -c 'curl -sL https://raw.githubusercontent.com/govarthenan/cloud-config/main/runpod.sh | bash && /start.sh'
+# start script --> bash -c 'curl -sL https://raw.githubusercontent.com/govarthenan/cloud-config/main/runpod.sh > /post_start.sh && /start.sh'
 
 # download and install 
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
@@ -12,4 +12,4 @@ source ${HOME}/.bashrc
 # configure mamba
 conda config --set auto_activate_base false
 source ${HOME}/.bashrc
-mamba update -n base --all
+mamba update -n base --all --yes
