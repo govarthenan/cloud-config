@@ -7,9 +7,7 @@ bash Miniforge3-$(uname)-$(uname -m).sh -b
 
 # initiate mamba
 ${HOME}/miniforge3/bin/mamba init
-source ${HOME}/.bashrc
 
 # configure mamba
-conda config --set auto_activate_base false
-source ${HOME}/.bashrc
-mamba update -n base --all --yes
+${HOME}/miniforge3/bin/conda config --set auto_activate_base false
+${HOME}/miniforge3/bin/mamba update -n base --all --yes
