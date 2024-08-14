@@ -11,3 +11,9 @@ ${HOME}/miniforge3/bin/mamba init
 # configure mamba
 ${HOME}/miniforge3/bin/conda config --set auto_activate_base false
 ${HOME}/miniforge3/bin/mamba update -n base --all --yes
+
+# setup environment
+${HOME}/miniforge3/bin/mamba create -n llmft python=3.9 jupyter notebook transformers pytorch peft flash-attn --yes
+${HOME}/miniforge3/bin/mamba activate llmft
+pip install uv
+uv install trl bitsandbytes
