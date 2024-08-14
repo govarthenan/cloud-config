@@ -4,7 +4,7 @@ chmod +x Miniforge3-$(uname)-$(uname -m).sh
 bash Miniforge3-$(uname)-$(uname -m).sh -b
 
 # initiate mamba
-${HOME}/miniforge3/mamba init
+${HOME}/miniforge3/bin/mamba init
 source ${HOME}/.bashrc
 
 # configure mamba
