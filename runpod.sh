@@ -9,4 +9,5 @@ source ${HOME}/.bashrc
 
 # configure mamba
 conda config --set auto_activate_base false
+source ${HOME}/.bashrc
 mamba update -n base --all
