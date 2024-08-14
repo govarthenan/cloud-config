@@ -1,3 +1,5 @@
+# start script --> bash -c 'curl -sL https://raw.githubusercontent.com/govarthenan/cloud-config/main/runpod.sh | bash && /start.sh'
+
 # download and install 
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 chmod +x Miniforge3-$(uname)-$(uname -m).sh
